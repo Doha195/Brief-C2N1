@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Spartan', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.container {
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1rem;
+    width: 90%;
+    margin: 40px auto;
+}
+.box1, .box2, .box3, .box4, .box5{
+    padding: 20px;
+    border-radius: 1em;
+}
+.box1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: 77%;
+}
+.box2 {
+    background-color:hsl(217, 19%, 35%);
+    grid-column: 3/4;
+    grid-row: 1/2;
+}   
+.box3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    box-shadow: ;
+}
+.box4 {
+    background-color:hsl(219, 29%, 14%);
+    grid-column: 2/4;
+    grid-row: 2/3;
+   
+}
+.box5 {
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 4/5; 
+    grid-row: 1/3;
+    box-shadow: ;
+ 
+}
+ 
+.box1 p {
+    color: hsl(0, 0%, 100%);
+}
+.box2 p {
+    color: hsl(0, 0%, 100%);
+}
+.box4 p {
+    color: hsl(0, 0%, 100%);
+} 
+img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+strong {
+    font-size: 17px;
+}
+p {
+    font-size: 12.5px;
+    margin-top: 20px;
+    color:hsl(0, 2%, 50%);
+}
+
+.myclass {
+    color: hsl(0, 2%, 36%);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+.name1 {
+    color:hsl(0, 0%, 100%);
+}
+.Ver {
+    color: hsl(0, 0%, 81%);
+}
+.info {
+    margin-left: 20px;
+}
+section .svg {
+    margin-left: 25em;
+}
+@media (max-width: 500px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 40px auto;
+    }
+}
